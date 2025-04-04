@@ -8,7 +8,7 @@ Each checkbox is a 10-minute turn—tick them off, watch the clock, and log what
 
 When a day passes, make a new tracker.
 
-At the end of a session, copy out all the logs.
+At the end of a session, copy out all the Referee's Notes.
 
 ## Features
 - **Turn Tracker**: 1 Sheet = 144 checkboxes = 24 hours of dungeon time. Mark turns as they pass.
