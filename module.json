@@ -1,0 +1,17 @@
+{
+    "id": "ericpugsdungeontimetracker",
+    "title": "EricPugsDungeonTimeTracker",
+    "version": "1.0.0",
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12"
+    },
+    "description": "It's just a way to track turns in the dungeon.",
+    "scripts": [ "scripts/ericpugs-dungeon-tracker.js" ],
+    "styles": [ "styles/ericpugs-dungeon-tracker.css" ],
+    "authors": [
+        {
+            "name": "Eric Pug"
+        }
+    ]
+}

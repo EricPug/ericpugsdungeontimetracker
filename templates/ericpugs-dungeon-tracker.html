@@ -1,0 +1,15 @@
+<form class="sheet ericpugs-dungeon-time-tracker">
+  <div class="grid-container">
+    {{#each tracker as |row rowIdx|}}
+      <div class="grid-row">
+        {{#each row as |group colIdx|}}
+          <div class="grid-group">
+            {{#each group as |checked cbIdx|}}
+              <input type="checkbox" class="tracker-checkbox" data-row="{{rowIdx}}" data-col="{{colIdx}}" data-checkbox-index="{{cbIdx}}" {{#if checked}}checked{{/if}} />
+            {{/each}}
+          </div>
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+</form>
