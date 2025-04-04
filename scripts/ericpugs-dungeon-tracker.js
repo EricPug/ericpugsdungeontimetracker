@@ -36,9 +36,17 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
 
     // Total Elapsed Time
     const totalMinutes = checkedCount * 10;
-    const hours = Math.floor(totalMinutes / 60);
-    const minutes = totalMinutes % 60;
-    data.elapsedTime = hours > 0 ? `${hours} hour${hours > 1 ? "s" : ""}, ${minutes} minute${minutes !== 1 ? "s" : ""}` : `${minutes} minute${minutes !== 1 ? "s" : ""}`;
+    const elapsedHours = Math.floor(totalMinutes / 60);
+    const elapsedMinutes = totalMinutes % 60;
+    data.elapsedTime = elapsedHours > 0 ? `${elapsedHours} hour${elapsedHours > 1 ? "s" : ""}, ${elapsedMinutes} minute${elapsedMinutes !== 1 ? "s" : ""}` : `${elapsedMinutes} minute${elapsedMinutes !== 1 ? "s" : ""}`;
+
+    // Current Time
+    const startHourNum = parseInt(data.startHour.split(":")[0]);
+    const totalHours = startHourNum + elapsedHours;
+    const currentHour = totalHours % 24;
+    const currentMinutes = elapsedMinutes;
+    const day = Math.floor(totalHours / 24) + 1;
+    data.currentTime = `${currentHour.toString().padStart(2, "0")}:${currentMinutes.toString().padStart(2, "0")}${day > 1 ? ` Day ${day}` : ""}`;
 
     return data;
   }
