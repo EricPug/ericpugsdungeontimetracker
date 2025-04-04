@@ -7,8 +7,8 @@
   padding-right: 10px;
 }
 .ericpugs-dungeon-time-tracker .header-left p {
-  font-size: 12px; /* Matches .text-column, adjust if smaller needed */
-  margin: 5px 0; /* Tighten spacing a bit */
+  font-size: 12px;
+  margin: 5px 0;
 }
 .ericpugs-dungeon-time-tracker .header-right {
   width: 50%;
@@ -63,10 +63,15 @@
 .ericpugs-dungeon-time-tracker .referee-notes {
   width: 50%;
 }
+.ericpugs-dungeon-time-tracker .referee-notes label {
+  display: block; /* Forces label above textarea */
+  margin-bottom: 5px; /* Space between label and textarea */
+}
 .ericpugs-dungeon-time-tracker .referee-notes textarea {
   width: 100%;
-  height: 150px; /* Back to 150px—500px was huge, but resize: both still works */
+  height: 150px;
   resize: both;
+  display: block; /* Ensures textarea stays below label */
 }
 .ericpugs-dungeon-time-tracker .time-tracking {
   margin-top: 10px;
