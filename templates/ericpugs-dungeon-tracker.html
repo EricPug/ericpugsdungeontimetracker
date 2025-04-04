@@ -8,6 +8,17 @@
     <p>R Party must rest for 1 turn</p>
     <p>T Torch expires</p>
     <p>L Lantern oil expires</p>
+    <div class="time-tracking">
+      <label for="start-time">Time Started:</label>
+      <select id="start-time">
+        {{#select startHour}}
+          {{#each hours}}
+            <option value="{{this}}">{{this}}</option>
+          {{/each}}
+        {{/select}}
+      </select>
+      <p>Total Elapsed Time: {{elapsedTime}}</p>
+    </div>
   </div>
   <div class="grid-container">
     <div class="grid-row annotation-row">

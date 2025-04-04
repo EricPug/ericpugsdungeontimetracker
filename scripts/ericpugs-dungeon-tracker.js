@@ -13,6 +13,7 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
   getData() {
     const data = super.getData();
     let tracker = [];
+    let checkedCount = 0;
     for (let row = 0; row < 6; row++) {
       let rowData = [];
       for (let col = 0; col < 4; col++) {
@@ -20,6 +21,7 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
         for (let checkbox = 0; checkbox < 6; checkbox++) {
           const checked = this.actor.getFlag("ericpugsdungeontimetracker", `tracker.${row}.${col}.${checkbox}`) || false;
           groupData.push(checked);
+          if (checked) checkedCount++;
         }
         rowData.push(groupData);
       }
@@ -27,6 +29,17 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
     }
     data.tracker = tracker;
     data.notes = this.actor.getFlag("ericpugsdungeontimetracker", "notes") || "";
+
+    // Time Started
+    data.startHour = this.actor.getFlag("ericpugsdungeontimetracker", "startHour") || "00:00";
+    data.hours = Array.from({ length: 24 }, (_, i) => `${i.toString().padStart(2, "0")}:00`);
+
+    // Total Elapsed Time
+    const totalMinutes = checkedCount * 10;
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = totalMinutes % 60;
+    data.elapsedTime = hours > 0 ? `${hours} hour${hours > 1 ? "s" : ""}, ${minutes} minute${minutes !== 1 ? "s" : ""}` : `${minutes} minute${minutes !== 1 ? "s" : ""}`;
+
     return data;
   }
 
@@ -44,6 +57,11 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
     html.find("#referee-notes").off("blur").on("blur", async (event) => {
       const notes = event.currentTarget.value;
       await this.actor.setFlag("ericpugsdungeontimetracker", "notes", notes);
+    });
+
+    html.find("#start-time").off("change").on("change", async (event) => {
+      const startHour = event.currentTarget.value;
+      await this.actor.setFlag("ericpugsdungeontimetracker", "startHour", startHour);
     });
   }
 }

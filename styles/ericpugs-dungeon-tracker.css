@@ -50,3 +50,13 @@
   height: 150px;
   resize: vertical;
 }
+.ericpugs-dungeon-time-tracker .time-tracking {
+  margin-top: 10px;
+}
+.ericpugs-dungeon-time-tracker .time-tracking select {
+  margin-left: 5px;
+  width: 80px;
+}
+.ericpugs-dungeon-time-tracker .time-tracking p {
+  margin: 5px 0 0 0;
+}
