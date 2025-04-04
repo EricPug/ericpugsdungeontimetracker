@@ -1,5 +1,17 @@
 <form class="sheet ericpugs-dungeon-time-tracker">
+  <div class="header">
+    <h1>Dungeon Time Tracker</h1>
+    <p>Each box = 1 turn; blocks of 6 boxes = 1 hour; all blocks on this sheet = 1 day.</p>
+    <p>Letters beside boxes indicate events or checks (see below).</p>
+    <p>Add symbols alongside turn boxes when events will occur (e.g. a spell will expire).</p>
+  </div>
+  <div class="controls">
+    <button type="button" class="clear-all">Clear All Checkboxes</button>
+  </div>
   <div class="grid-container">
+    <div class="grid-row annotation-row">
+      <div class="annotation-text">          w            w          wrt                w            w          wrt                w            w           wrt               w            w          wrtL</div>
+    </div>
     {{#each tracker as |row rowIdx|}}
       <div class="grid-row">
         {{#each row as |group colIdx|}}
