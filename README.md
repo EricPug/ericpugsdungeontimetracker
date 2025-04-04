@@ -36,7 +36,7 @@ At the end of a session, copy out all the logs.
 - **Log Events**: Click "Add Time" to stamp the current time in "Referee's Notes", then type what happened (e.g., "08:40 Day 2 Giant slug ate a mule").
 - **New Session?**: Create a new actor for a fresh tracker—notes and times persist per instance.
 
-- **Day Two?**: Each sheet has 1 day of checkboxes. If the time elapsed rolls over midnight, then the sheet prints "Day 2". You could of course start a new sheet if you want.
+- **Day Two?**: Each sheet has 1 day of checkboxes. If the time elapsed rolls over midnight, then the sheet prints the time plus "Day 2". You could of course start a new sheet if you want.
 
 ## Why It Exists
 Dungeon crawling—tracking turns manually kind of sucks. And so often people wonder 'how long have we been down here?' or 'what time is it'. Plus I needed a log that kept track while things were going on.
