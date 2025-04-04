@@ -1,24 +1,29 @@
 <form class="sheet ericpugs-dungeon-time-tracker">
   <div class="header">
-    <h1>Dungeon Time Tracker</h1>
-    <p>Each box = 1 turn; blocks of 6 boxes = 1 hour; all blocks on this sheet = 1 day.</p>
-    <p>Letters beside boxes indicate events or checks (see below).</p>
-    <p>Add symbols alongside turn boxes when events will occur (e.g. a spell will expire).</p>
-    <p>W Wandering monster check</p>
-    <p>R Party must rest for 1 turn</p>
-    <p>T Torch expires</p>
-    <p>L Lantern oil expires</p>
-    <div class="time-tracking">
-      <label for="start-time">Time Started:</label>
-      <select id="start-time">
-        {{#select startHour}}
-          {{#each hours}}
-            <option value="{{this}}">{{this}}</option>
-          {{/each}}
-        {{/select}}
-      </select>
-      <p>Total Elapsed Time: {{elapsedTime}}</p>
-      <p>Current Time: {{currentTime}}</p>
+    <div class="header-left">
+      <h1>Dungeon Time Tracker</h1>
+      <p>Each box = 1 turn; blocks of 6 boxes = 1 hour; all blocks on this sheet = 1 day.</p>
+      <p>Letters beside boxes indicate events or checks (see below).</p>
+      <p>Add symbols alongside turn boxes when events will occur (e.g. a spell will expire).</p>
+      <p>W Wandering monster check</p>
+      <p>R Party must rest for 1 turn</p>
+      <p>T Torch expires</p>
+      <p>L Lantern oil expires</p>
+    </div>
+    <div class="header-right">
+      <img src="modules/ericpugsdungeontimetracker/images/logo.png" alt="Dungeon Time Tracker Logo" class="logo">
+      <div class="time-tracking">
+        <label for="start-time">Time Started:</label>
+        <select id="start-time">
+          {{#select startHour}}
+            {{#each hours}}
+              <option value="{{this}}">{{this}}</option>
+            {{/each}}
+          {{/select}}
+        </select>
+        <p>Total Elapsed Time: {{elapsedTime}}</p>
+        <p>Current Time: {{currentTime}}</p>
+      </div>
     </div>
   </div>
   <div class="grid-container">
