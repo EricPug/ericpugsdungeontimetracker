@@ -40,17 +40,13 @@
 .ericpugs-dungeon-time-tracker .text-column {
   width: 50%;
   padding-right: 10px;
-  font-size: 12px; /* Smaller to fit more text */
+  font-size: 12px;
 }
 .ericpugs-dungeon-time-tracker .referee-notes {
   width: 50%;
 }
 .ericpugs-dungeon-time-tracker .referee-notes textarea {
   width: 100%;
-  height: 150px; /* Increased for more space */
+  height: 150px;
   resize: vertical;
-}
-.ericpugs-dungeon-time-tracker .controls {
-  width: 100%;
-  margin-top: 10px;
 }
