@@ -1,6 +1,10 @@
 # Eric Pug's Dungeon Time Tracker
 
-A Foundry VTT module for tracking time and events in your dungeon crawls. Designed for old-school play (like Old-School Essentials), it keeps tabs on turns, elapsed time, and referee notes with zero fuss. Each checkbox is a 10-minute turn—tick them off, watch the clock, and log what happens.
+A Foundry VTT module for tracking time and events in your dungeon crawls. 
+Designed for Old-School Essentials, it keeps track of turns, calculates elapsed time, current time, and a log of the action. 
+Each checkbox is a 10-minute turn—tick them off, watch the clock, and log what happens.
+When a day passes, make a new tracker.
+At the end of a session, copy out all the logs.
 ![image](https://github.com/user-attachments/assets/29257af2-cd2d-4b84-b24f-235adf16289c)
 
 ## Features
@@ -8,8 +12,8 @@ A Foundry VTT module for tracking time and events in your dungeon crawls. Design
 - **Time Started**: Set the hour your party entered (00:00 to 23:00) via a dropdown.
 - **Total Elapsed Time**: Auto-calculates time spent (e.g., "2 hours, 30 minutes") from checked boxes.
 - **Current Time**: Shows the in-game time (e.g., "18:30" or "06:00 Day 2") based on start time + elapsed turns.
-- **Referee's Notes**: Text area for logging events, with an "Add Time" button to stamp the current time at the bottom (e.g., "07:20 Day 2\nThief died by poisoned dagger").
-- **Persistent**: All data (checkboxes, start time, notes) saves to the actor’s flags—new instances start fresh.
+- **Referee's Notes**: Text area for logging events, with an "Add Time" button to add the current time.
+- **Persistent**: All data saves to the actor’s flags.
 
 ## Installation
 1. **Download**: Grab the latest zip from [Releases](https://github.com/EricPug/ericpugsdungeontimetracker/releases) (or clone this repo).
@@ -19,17 +23,18 @@ A Foundry VTT module for tracking time and events in your dungeon crawls. Design
 
 ## Usage
 - **Open the Sheet**: Assign it to an actor and open it up.
-- **Set Start Time**: Pick the hour your party enters (e.g., "18:00").
+- **Set Start Time**: Pick the hour your party enters 'dungeon time' (e.g., "18:00").
 - **Track Turns**: Check boxes as turns pass—each is 10 minutes.
 - **Watch Time**: "Total Elapsed Time" and "Current Time" update automatically.
-- **Log Events**: Click "Add Time" to stamp the current time in "Referee's Notes", then type what happened (e.g., "08:40 Day 2\nGiant slug evaded").
+- **Timed Events**: Torches burn out, the party must rest, wandering monsters are checked... it's all marked right there.
+- **Log Events**: Click "Add Time" to stamp the current time in "Referee's Notes", then type what happened (e.g., "08:40 Day 2 Giant slug ate a mule").
 - **New Session?**: Create a new actor for a fresh tracker—notes and times persist per instance.
 
 ## Why It Exists
-Born from the chaos of dungeon crawling—tracking turns manually sucks, and we needed a log that didn’t break. It’s a referee’s best friend for old-school games.
+Dungeon crawling—tracking turns manually kind of sucks. And so often people wonder 'how long have we been down here?' or 'what time is it'. Plus I needed a log that kept track while things were going on.
 
 ## License
-MIT License—use it, tweak it, share it. Do what you want, just don’t sue me.
+MIT License.
 
 ---
 Made with grit and caffeine by EricPug.
