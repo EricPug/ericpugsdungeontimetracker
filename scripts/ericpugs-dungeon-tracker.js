@@ -26,13 +26,13 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
       tracker.push(rowData);
     }
     data.tracker = tracker;
+    data.notes = this.actor.getFlag("ericpugsdungeontimetracker", "notes") || ""; // Load notes
     return data;
   }
 
   activateListeners(html) {
     super.activateListeners(html);
 
-    // Checkbox change
     html.find(".tracker-checkbox").on("change", async (event) => {
       const row = event.currentTarget.dataset.row;
       const col = event.currentTarget.dataset.col;
@@ -41,7 +41,6 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
       await this.actor.setFlag("ericpugsdungeontimetracker", `tracker.${row}.${col}.${checkboxIndex}`, checked);
     });
 
-    // Clear all button
     html.find(".clear-all").on("click", async (event) => {
       event.preventDefault();
       if (confirm("Are you sure you want to clear all checkboxes?")) {
@@ -56,6 +55,11 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
         await this.actor.update(updates);
         this.render();
       }
+    });
+
+    html.find("#referee-notes").on("blur", async (event) => {
+      const notes = event.currentTarget.value;
+      await this.actor.setFlag("ericpugsdungeontimetracker", "notes", notes);
     });
   }
 }
