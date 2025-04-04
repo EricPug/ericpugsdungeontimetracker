@@ -32,13 +32,13 @@ At the end of a session, copy out all the logs.
 4. **Add Actor**: Create an actor (character or NPC), open its sheet, and select this tracker from the sheet options.
 
 ## Usage
-- **Open the Sheet**: Assign it to an actor and open it up.
-- **Set Start Time**: Pick the hour your party enters 'dungeon time' (e.g., "18:00").
+- **Set Start Time**: Pick the hour your party enters 'dungeon time'.
 - **Track Turns**: Check boxes as turns pass—each is 10 minutes.
 - **Watch Time**: "Total Elapsed Time" and "Current Time" update automatically.
 - **Timed Events**: Torches burn out, the party must rest, wandering monsters are checked... it's all marked right there.
 - **Log Events**: Click "Add Time" to stamp the current time in "Referee's Notes", then type what happened (e.g., "08:40 Day 2 Giant slug ate a mule").
-- **New Session?**: Create a new actor for a fresh tracker—notes and times persist per instance.
+- **Long dungeon delve?**: Create a new actor for a fresh tracker for each day.
+- **End of game session log**: Copy the text out of the Referee's Notes for a record of what happened.
 
 - **Day Two?**: Each sheet has 1 day of checkboxes. If the time elapsed rolls over midnight, then the sheet prints the time plus "Day 2". You could of course start a new sheet if you want.
 
