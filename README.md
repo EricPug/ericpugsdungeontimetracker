@@ -5,7 +5,6 @@ Designed for Old-School Essentials, it keeps track of turns, calculates elapsed 
 Each checkbox is a 10-minute turn—tick them off, watch the clock, and log what happens.
 When a day passes, make a new tracker.
 At the end of a session, copy out all the logs.
-![image](https://github.com/user-attachments/assets/29257af2-cd2d-4b84-b24f-235adf16289c)
 
 ## Features
 - **Turn Tracker**: 144 checkboxes (6x4x6 grid) for 24 hours of dungeon time. Mark turns as they pass.
@@ -14,6 +13,13 @@ At the end of a session, copy out all the logs.
 - **Current Time**: Shows the in-game time (e.g., "18:30" or "06:00 Day 2") based on start time + elapsed turns.
 - **Referee's Notes**: Text area for logging events, with an "Add Time" button to add the current time.
 - **Persistent**: All data saves to the actor’s flags.
+
+
+
+![image](https://github.com/user-attachments/assets/29257af2-cd2d-4b84-b24f-235adf16289c)
+
+
+
 
 ## Installation
 1. **Download**: Grab the latest zip from [Releases](https://github.com/EricPug/ericpugsdungeontimetracker/releases) (or clone this repo).
