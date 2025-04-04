@@ -3,8 +3,8 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["sheet", "actor", "ericpugs-dungeon-time-tracker"],
       template: "modules/ericpugsdungeontimetracker/templates/ericpugs-dungeon-tracker.html",
-      width: 1000, // Widened from 600
-      height: 500, // Adjusted for more content
+      width: 1000,
+      height: 1000,
       resizable: true,
       title: "Eric Pug's Dungeon Time Tracker"
     });

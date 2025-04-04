@@ -4,9 +4,10 @@
     <p>Each box = 1 turn; blocks of 6 boxes = 1 hour; all blocks on this sheet = 1 day.</p>
     <p>Letters beside boxes indicate events or checks (see below).</p>
     <p>Add symbols alongside turn boxes when events will occur (e.g. a spell will expire).</p>
-  </div>
-  <div class="controls">
-    <button type="button" class="clear-all">Clear All Checkboxes</button>
+    <p>W Wandering monster check</p>
+    <p>R Party must rest for 1 turn</p>
+    <p>T Torch expires</p>
+    <p>L Lantern oil expires</p>
   </div>
   <div class="grid-container">
     <div class="grid-row annotation-row">
@@ -23,5 +24,48 @@
         {{/each}}
       </div>
     {{/each}}
+  </div>
+  <div class="footer">
+    <div class="text-columns">
+      <div class="text-column">
+        <p><strong>Sequence of Play Per Turn</strong></p>
+        <p>1. Wandering monsters: Roll when noted in turn tracker.</p>
+        <p>2. Actions: The party decides what actions to take (e.g. moving, searching, listening, entering rooms).</p>
+        <p>3. Description: Describe what happens. If monsters are encountered, follow the Encounters procedure in Old-School Essentials.</p>
+        <p>4. End of turn: Tick off a turn, paying attention to events noted in the turn tracker.</p>
+        <p><strong>Time</strong></p>
+        <p>Rounds: 10 seconds</p>
+        <p>Minutes: 6 rounds</p>
+        <p>Turns: 10 minutes</p>
+        <p>Hours: 6 turns</p>
+        <p><strong>Common Durations</strong></p>
+        <p>Torch: 6 turns (1 hour)</p>
+        <p>Lantern: 24 turns (4 hours)</p>
+        <p>Light (C): 12 turns (2 hours)</p>
+        <p>Light (MU): 6 turns + 1/level</p>
+        <p>Potion: 1d6 + 6 turns</p>
+        <p>Burning oil pool: 1 turn</p>
+      </div>
+      <div class="text-column">
+        <p><strong>Wandering Monsters</strong></p>
+        <p>The chance of an encounter is typically 1-in-6 every 2 turns.</p>
+        <p><strong>Resting (1 Turn/Hour)</strong></p>
+        <p>Characters who do not rest suffer a –1 penalty to attack and damage rolls until they have rested for one turn.</p>
+        <p><strong>Actions in 1 Turn</strong></p>
+        <p>Move: Base movement rate.</p>
+        <p>Search a 10’ × 10’ area: For secret doors / room traps.</p>
+        <p>Search an item: For treasure traps. (Skilled characters only.)</p>
+        <p>Encounter: All encounters / combats take 1 turn.</p>
+        <p>Debate: If players spend 10 minutes of real time discussing, the referee may rule that a turn has passed while PCs discuss.</p>
+        <p>Other actions: The referee should rule on which other actions take 1 turn. e.g. attempts to pick a lock, listen at a door, remove a treasure trap, fill a bag with treasure, etc.</p>
+      </div>
+    </div>
+    <div class="referee-notes">
+      <label for="referee-notes">Referee's Notes</label>
+      <textarea id="referee-notes" name="flags.ericpugsdungeontimetracker.notes"></textarea>
+    </div>
+    <div class="controls">
+      <button type="button" class="clear-all">Clear All Checkboxes</button>
+    </div>
   </div>
 </form>
