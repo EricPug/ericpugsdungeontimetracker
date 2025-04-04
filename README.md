@@ -31,4 +31,4 @@ Born from the chaos of dungeon crawling—tracking turns manually sucks, and we 
 MIT License—use it, tweak it, share it. Do what you want, just don’t sue me.
 
 ---
-Made with grit and caffeine by [Your Name/GitHub Handle].
+Made with grit and caffeine by EricPug.
