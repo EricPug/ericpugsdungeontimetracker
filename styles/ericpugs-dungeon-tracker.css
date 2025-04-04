@@ -60,3 +60,7 @@
 .ericpugs-dungeon-time-tracker .time-tracking p {
   margin: 5px 0 0 0;
 }
+.ericpugs-dungeon-time-tracker .insert-time {
+  margin-top: 5px;
+  padding: 5px 10px;
+}

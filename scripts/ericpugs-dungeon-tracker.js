@@ -71,6 +71,34 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
       const startHour = event.currentTarget.value;
       await this.actor.setFlag("ericpugsdungeontimetracker", "startHour", startHour);
     });
+
+    html.find(".insert-time").off("click").on("click", async (event) => {
+      event.preventDefault();
+      // Recalculate current time
+      let checkedCount = 0;
+      for (let row = 0; row < 6; row++) {
+        for (let col = 0; col < 4; col++) {
+          for (let checkbox = 0; checkbox < 6; checkbox++) {
+            if (this.actor.getFlag("ericpugsdungeontimetracker", `tracker.${row}.${col}.${checkbox}`)) checkedCount++;
+          }
+        }
+      }
+      const totalMinutes = checkedCount * 10;
+      const elapsedHours = Math.floor(totalMinutes / 60);
+      const elapsedMinutes = totalMinutes % 60;
+      const startHour = this.actor.getFlag("ericpugsdungeontimetracker", "startHour") || "00:00";
+      const startHourNum = parseInt(startHour.split(":")[0]);
+      const totalHours = startHourNum + elapsedHours;
+      const currentHour = totalHours % 24;
+      const day = Math.floor(totalHours / 24) + 1;
+      const currentTime = `${currentHour.toString().padStart(2, "0")}:${elapsedMinutes.toString().padStart(2, "0")}${day > 1 ? ` Day ${day}` : ""}`;
+
+      // Append to notes
+      const notes = this.actor.getFlag("ericpugsdungeontimetracker", "notes") || "";
+      const newNotes = notes + (notes ? "\n" : "") + currentTime + "\n";
+      await this.actor.setFlag("ericpugsdungeontimetracker", "notes", newNotes);
+      html.find("#referee-notes").val(newNotes);
+    });
   }
 }
 
