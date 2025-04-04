@@ -9,7 +9,7 @@ At the end of a session, copy out all the logs.
 ## Features
 - **Turn Tracker**: 144 checkboxes (6x4x6 grid) for 24 hours of dungeon time. Mark turns as they pass.
 - **Time Started**: Set the hour your party entered (00:00 to 23:00) via a dropdown.
-- **Total Elapsed Time**: Auto-calculates time spent (e.g., "2 hours, 30 minutes") from checked boxes.
+- **Total Elapsed Time**: Calculates time spent in the dungeon (e.g., "2 hours, 30 minutes") from checked boxes.
 - **Current Time**: Shows the in-game time (e.g., "18:30" or "06:00 Day 2") based on start time + elapsed turns.
 - **Referee's Notes**: Text area for logging events, with an "Add Time" button to add the current time.
 - **Persistent**: All data saves to the actor’s flags.
