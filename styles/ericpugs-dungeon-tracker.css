@@ -11,7 +11,7 @@
   margin: 5px 0;
 }
 .ericpugs-dungeon-time-tracker .event-indent {
-  padding-left: 1em; /* ~4 spaces at 12px font-size */
+  padding-left: 1em;
 }
 .ericpugs-dungeon-time-tracker .header-right {
   width: 50%;
@@ -25,11 +25,14 @@
 .ericpugs-dungeon-time-tracker .grid-container {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 20px 20px 10px 20px; /* Reduced bottom margin from 20px to 10px */
 }
 .ericpugs-dungeon-time-tracker .grid-row {
   display: flex;
   margin-bottom: 10px;
+}
+.ericpugs-dungeon-time-tracker .grid-row:last-child {
+  margin-bottom: 0; /* No margin on the last row */
 }
 .ericpugs-dungeon-time-tracker .annotation-row {
   display: flex;
@@ -52,7 +55,7 @@
 .ericpugs-dungeon-time-tracker .footer {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 10px 20px 20px 20px; /* Reduced top margin from 20px to 10px */
 }
 .ericpugs-dungeon-time-tracker .text-columns {
   display: flex;
