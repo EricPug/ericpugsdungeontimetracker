@@ -11,8 +11,8 @@ I don't want to bother counting turns and figuring it out.
 Plus I needed a log that kept track of what was going on... **while things were going on.**
 
 ## Features
-- **Turn Tracker**: 1 Sheet = 144 checkboxes = 24 hours of dungeon time.
-- Check off turns as they pass.
+- **Turn Tracker**: Check off turns as they pass.
+- 1 Sheet = 144 checkboxes = 24 hours of dungeon time.
 - **Time Started**: Set the hour your party entered the dungeon with the dropdown.
 - **Total Elapsed Time**: Calculates time spent in the dungeon is calculated for you from the checked boxes.
 - **Current Time**: Shows the in-game time (e.g., "18:30" or "06:00 Day 2") based on start time + elapsed turns.
