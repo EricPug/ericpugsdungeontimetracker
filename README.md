@@ -6,7 +6,7 @@ Keep track of turns, calculate elapsed time, current time, and create a log of t
 
 Designed for Old-School Essentials
 
-![image](https://github.com/user-attachments/assets/e5ed3364-3d84-4bf4-afe2-5b1171cf9397)
+![image](https://github.com/user-attachments/assets/1cae8059-449f-47d0-a077-aee6832e07f5)
 
 
 ## Features
@@ -23,7 +23,8 @@ Designed for Old-School Essentials
 1. **Download**: Get the latest zip from [Releases](https://github.com/EricPug/ericpugsdungeontimetracker/releases) (or clone this repo).
 2. **Extract**: Unzip to `FoundryVTT/Data/modules/ericpugsdungeontimetracker`.
 3. **Enable**: In Foundry VTT, go to *Game Settings > Manage Modules*, enable "Eric Pug's Dungeon Time Tracker".
-4. **Add Actor**: Create an actor open its sheet, and select this tracker from the sheet options.
+4.a **Add Actor**: Create an actor open its sheet, and select this tracker from the sheet options.
+4.b **Add from compendium**: Create a copy from the included compendium.
 
 ## Usage
 - **Set Start Time**: Pick the hour your party enters 'dungeon time'.
