@@ -39,7 +39,10 @@ Designed for Old-School Essentials
 
 
 ## License
-MIT License.
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+
+Attribution: EricPug (https://github.com/EricPug)
 
 ---
 Made with grit and caffeine by EricPug.
