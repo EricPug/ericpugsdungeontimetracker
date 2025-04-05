@@ -32,7 +32,7 @@ Plus I needed a log that kept track of what was going on... **while things were 
 
 ## Usage
 - **Set Start Time**: Pick the hour your party enters 'dungeon time'.
-- **Track Turns**: Check boxes as turns pass—each is 10 minutes.
+- **Track Turns**: Check boxes as turns pass.
 - **Watch Time**: "Total Elapsed Time" and "Current Time" update automatically.
 - **Timed Events**: Torches burn out, the party must rest, wandering monsters are checked... it's all marked right there.
 - **Log Events**: Click "Add Time" to stamp the current time in "Referee's Notes", then type what happened (e.g., "08:40 Day 2 Giant slug ate a mule").
