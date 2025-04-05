@@ -1,8 +1,10 @@
 # Eric Pug's Dungeon Time Tracker
 
-A Foundry VTT module for tracking time during dungeon crawls. Designed for Old-School Essentials
+A Foundry VTT module for tracking time during dungeon crawls. 
 
-Keep track of turns, calculate elapsed time, current time, and create a log of the action. 
+Keep track of turns, calculate elapsed time, current time, and create a log of the action.
+
+Designed for Old-School Essentials
 
 ## Features
 - **Turn Tracker**: Check off turns as they pass.
