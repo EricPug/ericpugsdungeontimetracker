@@ -26,7 +26,7 @@ At the end of a session, copy out all the Referee's Notes.
 1. **Download**: Get the latest zip from [Releases](https://github.com/EricPug/ericpugsdungeontimetracker/releases) (or clone this repo).
 2. **Extract**: Unzip to `FoundryVTT/Data/modules/ericpugsdungeontimetracker`.
 3. **Enable**: In Foundry VTT, go to *Game Settings > Manage Modules*, enable "Eric Pug's Dungeon Time Tracker".
-4. **Add Actor**: Create an actor (character or NPC), open its sheet, and select this tracker from the sheet options.
+4. **Add Actor**: Create an actor open its sheet, and select this tracker from the sheet options.
 
 ## Usage
 - **Set Start Time**: Pick the hour your party enters 'dungeon time'.
