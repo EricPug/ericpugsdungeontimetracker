@@ -5,8 +5,7 @@ A Foundry VTT module for tracking time during dungeon crawls.
 Keep track of turns, calculate elapsed time, current time, and create a log of the action.
 
 Designed for Old-School Essentials
-
-![image](https://github.com/user-attachments/assets/1cae8059-449f-47d0-a077-aee6832e07f5)
+![image](https://github.com/user-attachments/assets/df335485-85db-4467-8cef-cc11c91c5384)
 
 
 ## Features
