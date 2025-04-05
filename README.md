@@ -19,10 +19,7 @@ At the end of a session, copy out all the Referee's Notes.
 - **Persistent**: All data saves to the actor’s flags.
 
 
-
-![image](https://github.com/user-attachments/assets/29257af2-cd2d-4b84-b24f-235adf16289c)
-
-
+![image](https://github.com/user-attachments/assets/e5ed3364-3d84-4bf4-afe2-5b1171cf9397)
 
 
 ## Installation
