@@ -1,14 +1,14 @@
 <form class="sheet eric-pugs-dungeon-time-tracker">
   <div class="header">
     <div class="header-left">
-      <p>Each box = 1 turn.</p>
-      <p>Each block of 6 boxes = 1 hour.</p>
-      <p>Whole page = 24 hours.</p>
+      <p>Each box is 1 turn.</p>
+      <p>Each block of 6 boxes is 1 hour.</p>
+      <p>Whole page is 24 hours.</p>
       <p>Letters indicate OSE timed events or checks:</p>
-      <p class="event-indent">W = Wandering monster check</p>
-      <p class="event-indent">R = Party must rest for 1 turn</p>
+      <p class="event-indent">W = Wandering monster</p>
+      <p class="event-indent">R = Rest for 1 turn</p>
       <p class="event-indent">T = Torch expires</p>
-      <p class="event-indent">L = Lantern oil expires</p>
+      <p class="event-indent">L = Lantern expires</p>
     </div>
     <div class="header-right">
       <img src="modules/eric-pugs-dungeon-time-tracker/images/logo.png" alt="Dungeon Time Tracker Logo" class="logo">
@@ -46,15 +46,15 @@
     <div class="text-columns">
       <div class="text-column">
         <p><strong>Sequence of Play Per Turn</strong></p>
-        <p>1. Wandering monsters: Roll when noted in turn tracker. Typically 1-in-6</p>
-        <p>2. Actions: The party decides what actions to take (e.g. moving, searching, listening, entering rooms).</p>
-        <p>3. Description: Describe what happens. If monsters are encountered, follow the Encounters procedure in Old-School Essentials.</p>
-        <p>4. End of turn: Tick off a turn, paying attention to events noted in the turn tracker.</p>
+        <p>1. Wandering monsters: Roll when noted in turn tracker. Typically 1 on D6</p>
+        <p>2. Actions: The party decides what action to take (e.g. moving, searching, listening, entering rooms).</p>
+        <p>3. Description: Describe what happens. (e.g. Wandering monsters appear, torches expire)</p>
+        <p>4. End of turn: Tick off a turn.</p>
         <p><strong>Time</strong></p>
-        <p>Rounds: 10 seconds</p>
-        <p>Minutes: 6 rounds</p>
-        <p>Turns: 10 minutes</p>
-        <p>Hours: 6 turns</p>
+        <p>Rounds = 10 seconds</p>
+        <p>Minutes = 6 rounds</p>
+        <p>Turns = 10 minutes</p>
+        <p>Hours = 6 turns</p>
         <p><strong>Common Durations</strong></p>
         <p>Torch: 6 turns (1 hour)</p>
         <p>Lantern: 24 turns (4 hours)</p>
@@ -69,16 +69,16 @@
         <p><strong>Actions in 1 Turn</strong></p>
         <p>Move at base movement rate.</p>
         <p>Search a 10’ × 10’ area: For secret doors / room traps.</p>
-        <p>Search an item for treasure traps. (Skilled characters only.)</p>
-        <p>Encounter: All encounters / combats take 1 turn.</p>
-        <p>Debate: If players spend 10 minutes of real time discussing, the referee may rule that a turn has passed while PCs discuss.</p>
-        <p>Other actions: The referee should rule on which other actions take 1 turn. e.g. attempts to pick a lock, listen at a door, remove a treasure trap, fill a bag with treasure, etc.</p>
+        <p>Search an item for treasure traps. (Find traps skill)</p>
+        <p>Encounter: All encounters take 1 turn.</p>
+        <p>Debate: The referee may rule that a turn has passed while PCs discuss.</p>
+        <p>Other actions: The referee should rule on which other actions take 1 turn. e.g. attempts to pick a lock, listen at a door, etc.</p>
       </div>
     </div>
     <div class="referee-notes">
       <label for="referee-notes">Referee's Notes</label>
       <textarea id="referee-notes">{{notes}}</textarea>
-      <button type="button" class="insert-time">Add Time</button>
+      <button type="button" class="insert-time">Add Time to Notes</button>
     </div>
   </div>
 </form>
