@@ -33,8 +33,7 @@ Keep track of turns, calculate elapsed time, current time, and create a log of t
 - **Long dungeon delve?**: Create a new actor for a fresh tracker for each day.
 - **End of game session log**: Copy the text out of the Referee's Notes for a record of what happened.
 
-- **Day Two?**: Each sheet has 1 day of checkboxes. If the time elapsed rolls over midnight, then the sheet prints the time plus "Day 2". 
-You could of course start a new sheet if you want.
+- **Day Two?**: Each sheet has 1 day of checkboxes. If the time elapsed rolls over midnight, then the sheet prints the time plus "Day 2".
 
 
 
