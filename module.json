@@ -23,9 +23,18 @@
         "verified": "12"
     },
     "url": "https://github.com/EricPug/ericpugsdungeontimetracker",
-    "license": "MIT",
+    "license": "CC BY 4.0",
     "foundry": {
         "minimum": "12",
         "verified": "12"
-    }
+    },
+    "packs": [
+        {
+            "name": "ericpugs-dungeon-time-tracker-compendium",
+            "label": "Dungeon Time Tracker",
+            "path": "packs/ericpugs-dungeon-time-tracker",
+            "type": "Actor",
+            "system": "ose"
+        }
+    ]
 }

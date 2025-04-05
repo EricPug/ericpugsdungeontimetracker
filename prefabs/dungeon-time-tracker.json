@@ -1,0 +1,246 @@
+{
+  "name": "Dungeon Time Tracker",
+  "type": "character",
+  "img": "modules/ericpugsdungeontimetracker/images/icon.png",
+  "system": {
+    "retainer": {
+      "enabled": false,
+      "loyalty": null,
+      "wage": ""
+    },
+    "hp": {
+      "hd": "1d8",
+      "value": null,
+      "max": null
+    },
+    "ac": {
+      "value": 0,
+      "mod": 0
+    },
+    "aac": {
+      "value": 0,
+      "mod": 0
+    },
+    "thac0": {
+      "value": 19,
+      "bba": 0,
+      "mod": {
+        "missile": 0,
+        "melee": 0
+      }
+    },
+    "saves": {
+      "death": {
+        "value": null
+      },
+      "wand": {
+        "value": null
+      },
+      "paralysis": {
+        "value": null
+      },
+      "breath": {
+        "value": null
+      },
+      "spell": {
+        "value": 0
+      }
+    },
+    "movement": {
+      "base": 120
+    },
+    "initiative": {
+      "value": 0,
+      "mod": 0
+    },
+    "languages": {
+      "value": []
+    },
+    "spells": {
+      "1": {
+        "max": 0
+      },
+      "2": {
+        "max": 0
+      },
+      "3": {
+        "max": 0
+      },
+      "4": {
+        "max": 0
+      },
+      "5": {
+        "max": 0
+      },
+      "6": {
+        "max": 0
+      },
+      "enabled": false
+    },
+    "config": {
+      "movementAuto": true
+    },
+    "details": {
+      "biography": "",
+      "notes": "",
+      "class": "",
+      "title": "",
+      "alignment": "",
+      "level": 1,
+      "xp": {
+        "share": 100,
+        "next": 2000,
+        "value": 0,
+        "bonus": 0
+      }
+    },
+    "exploration": {
+      "ld": null,
+      "od": null,
+      "sd": null,
+      "ft": null
+    },
+    "scores": {
+      "str": {
+        "value": 0,
+        "bonus": 0
+      },
+      "int": {
+        "value": 0,
+        "bonus": 0
+      },
+      "wis": {
+        "value": 0,
+        "bonus": 0
+      },
+      "dex": {
+        "value": 0,
+        "bonus": 0
+      },
+      "con": {
+        "value": 0,
+        "bonus": 0
+      },
+      "cha": {
+        "value": 0,
+        "bonus": 0
+      }
+    },
+    "encumbrance": {
+      "max": 1600
+    }
+  },
+  "prototypeToken": {
+    "name": "Dungeon Time Tracker",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/ericpugsdungeontimetracker/images/icon.png",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": null
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {
+      "sheetClass": "core.EricPugsDungeonTimeTracker"
+    },
+    "ericpugsdungeontimetracker": {
+      "iconSet": true
+    },
+    "exportSource": {
+      "world": "ose",
+      "system": "ose",
+      "coreVersion": "12.331",
+      "systemVersion": "2.0.3"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "ose",
+    "systemVersion": "2.0.3",
+    "createdTime": 1743880595991,
+    "modifiedTime": 1743880604127,
+    "lastModifiedBy": "Ii6mdZjRbUedDL1E"
+  }
+}
