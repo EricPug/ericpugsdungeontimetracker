@@ -8,7 +8,7 @@ Keep track of turns, calculate elapsed time, current time, and create a log of t
 Tracking turns manually sucks. 
 Players ask 'how long have we been down here?' or 'what time is it?'. 
 I don't want to bother counting turns and figuring it out.
-Plus I needed a log that kept track of what was going on... **while things were going on.**
+Also, I needed a log that kept track of what was going on... **while things were going on.**
 
 ## Features
 - **Turn Tracker**: Check off turns as they pass.
