@@ -6,6 +6,9 @@ Keep track of turns, calculate elapsed time, current time, and create a log of t
 
 Designed for Old-School Essentials
 
+![image](https://github.com/user-attachments/assets/e5ed3364-3d84-4bf4-afe2-5b1171cf9397)
+
+
 ## Features
 - **Turn Tracker**: Check off turns as they pass.
 - 1 Sheet = 24 hours of dungeon time.
@@ -15,10 +18,6 @@ Designed for Old-School Essentials
 - **Referee's Notes**: Text area for logging events
 - "Add Time" button to add the current time to the notes automatically.
 - **Persistent**: All data saves to the actor.
-
-
-![image](https://github.com/user-attachments/assets/e5ed3364-3d84-4bf4-afe2-5b1171cf9397)
-
 
 ## Installation
 1. **Download**: Get the latest zip from [Releases](https://github.com/EricPug/ericpugsdungeontimetracker/releases) (or clone this repo).
