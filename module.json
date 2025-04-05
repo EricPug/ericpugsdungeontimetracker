@@ -1,6 +1,6 @@
 {
-    "id": "ericpugsdungeontimetracker",
-    "name": "ericpugs-dungeon-time-tracker",
+    "id": "eric-pugs-dungeon-time-tracker",
+    "name": "eric-pugs-dungeon-time-tracker",
     "title": "Eric Pug's Dungeon Time Tracker",
     "version": "1.0.0",
     "description": "This module allows you to track turns in dungeon crawls. Designed for OSE.",
