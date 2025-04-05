@@ -8,7 +8,7 @@ Keep track of turns, calculate elapsed time, current time, and create a log of t
 - **Turn Tracker**: Check off turns as they pass.
 - 1 Sheet = 24 hours of dungeon time.
 - **Time Started**: Set the hour your party entered the dungeon with the dropdown.
-- **Total Elapsed Time**: Time spent in the dungeon is calculated for you from the checked boxes.
+- **Total Elapsed Time**: Time spent in the dungeon is calculated from the checked boxes.
 - **Current Time**: Shows the in-game time (e.g., "18:30" or "06:00 Day 2") based on start time + elapsed turns.
 - **Referee's Notes**: Text area for logging events
 - "Add Time" button to add the current time to the notes automatically.
