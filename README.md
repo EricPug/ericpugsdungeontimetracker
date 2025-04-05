@@ -18,7 +18,7 @@ At the end of a session, copy out all the Referee's Notes.
 - **Current Time**: Shows the in-game time (e.g., "18:30" or "06:00 Day 2") based on start time + elapsed turns.
 - **Referee's Notes**: Text area for logging events,
 - "Add Time" button to add the current time to the notes automatically.
-- **Persistent**: All data saves to the actor’s flags.
+- **Persistent**: All data saves to the actor.
 
 
 ![image](https://github.com/user-attachments/assets/e5ed3364-3d84-4bf4-afe2-5b1171cf9397)
