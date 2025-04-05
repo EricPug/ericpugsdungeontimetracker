@@ -1,14 +1,8 @@
 # Eric Pug's Dungeon Time Tracker
 
-A Foundry VTT module for tracking time and events in your dungeon crawls.
+A Foundry VTT module for tracking time in your dungeon crawls.
 
 Designed for Old-School Essentials, it keeps track of turns, calculates elapsed time, current time, and a log of the action. 
-
-Each checkbox is a 10-minute turn—tick them off, watch the clock, and log what happens.
-
-When a day passes, make a new tracker.
-
-At the end of a session, copy out all the Referee's Notes.
 
 ## Features
 - **Turn Tracker**: 1 Sheet = 144 checkboxes = 24 hours of dungeon time.
