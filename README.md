@@ -4,6 +4,12 @@ A Foundry VTT module for tracking time during dungeon crawls.
 
 Designed for Old-School Essentials, it keeps track of turns, calculates elapsed time, current time, and creates a log of the action. 
 
+## Why?
+Tracking turns manually sucks. 
+Players ask 'how long have we been down here?' or 'what time is it?'. 
+I don't want to bother counting turns and figuring it out.
+Plus I needed a log that kept track of what was going on... **while things were going on.**
+
 ## Features
 - **Turn Tracker**: 1 Sheet = 144 checkboxes = 24 hours of dungeon time.
 - Check off turns as they pass.
@@ -35,10 +41,7 @@ Designed for Old-School Essentials, it keeps track of turns, calculates elapsed 
 
 - **Day Two?**: Each sheet has 1 day of checkboxes. If the time elapsed rolls over midnight, then the sheet prints the time plus "Day 2". You could of course start a new sheet if you want.
 
-## Why It Exists
-Tracking turns manually sucks. So often people wonder 'how long have we been down here?' or 'what time is it?'. 
-I don't want to bother counting turns and figuring it out.
-Plus I needed a log that kept track of what was going on... **while things were going on.**
+
 
 ## License
 MIT License.
