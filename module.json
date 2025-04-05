@@ -5,13 +5,10 @@
     "version": "1.0.0",
     "description": "This module allows you to track turns in dungeon crawls. Designed for OSE.",
     "scripts": [
-        "scripts/ericpugs-dungeon-tracker.js"
+        "scripts/eric-pugs-dungeon-time-tracker.js"
     ],
     "styles": [
-        "styles/ericpugs-dungeon-tracker.css"
-    ],
-    "templates": [
-        "templates/dungeon-time-tracker.html"
+        "styles/eric-pugs-dungeon-time-tracker.css"
     ],
     "authors": [
         {
@@ -24,15 +21,11 @@
     },
     "url": "https://github.com/EricPug/ericpugsdungeontimetracker",
     "license": "CC BY 4.0",
-    "foundry": {
-        "minimum": "12",
-        "verified": "12"
-    },
     "packs": [
         {
-            "name": "ericpugs-dungeon-time-tracker-compendium",
-            "label": "Dungeon Time Tracker",
-            "path": "packs/ericpugs-dungeon-time-tracker",
+            "name": "eric-pugs-dungeon-time-tracker-compendium",
+            "label": "Eric Pug's Dungeon Time Tracker",
+            "path": "packs/eric-pugs-dungeon-time-tracker",
             "type": "Actor",
             "system": "ose"
         }
