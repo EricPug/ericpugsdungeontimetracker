@@ -21,6 +21,7 @@
   max-width: 100%;
   max-height: 200px;
   display: block;
+  border: none;
 }
 .ericpugs-dungeon-time-tracker .grid-container {
   display: flex;
@@ -55,7 +56,7 @@
 .ericpugs-dungeon-time-tracker .footer {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 20px 20px 20px; /* Reduced top margin from 20px to 10px */
+  margin: 10px 20px 20px 20px;
 }
 .ericpugs-dungeon-time-tracker .text-columns {
   display: flex;

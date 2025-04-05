@@ -3,15 +3,24 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["sheet", "actor", "ericpugs-dungeon-time-tracker"],
       template: "modules/ericpugsdungeontimetracker/templates/ericpugs-dungeon-tracker.html",
-      width: 1000,
-      height: 1000,
+      width: 850,
+      height: 900,
       resizable: true,
       title: "Eric Pug's Dungeon Time Tracker"
     });
   }
 
-  getData() {
-    const data = super.getData();
+  async getData() {
+    const data = await super.getData();
+
+    // ✅ Set custom icon once if still using Foundry's default
+    if (this.actor.img === "icons/svg/mystery-man.svg" && !this.actor.getFlag("ericpugsdungeontimetracker", "iconSet")) {
+      await this.actor.update({ 
+        img: "modules/ericpugsdungeontimetracker/images/icon.png"
+      });
+      await this.actor.setFlag("ericpugsdungeontimetracker", "iconSet", true);
+    }
+
     let tracker = [];
     let checkedCount = 0;
     for (let row = 0; row < 6; row++) {

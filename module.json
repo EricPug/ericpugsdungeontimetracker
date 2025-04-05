@@ -1,17 +1,31 @@
 {
     "id": "ericpugsdungeontimetracker",
-    "title": "EricPugsDungeonTimeTracker",
+    "name": "ericpugs-dungeon-time-tracker",
+    "title": "Eric Pug's Dungeon Time Tracker",
     "version": "1.0.0",
-    "compatibility": {
-        "minimum": "12",
-        "verified": "12"
-    },
-    "description": "It's just a way to track turns in the dungeon.",
-    "scripts": [ "scripts/ericpugs-dungeon-tracker.js" ],
-    "styles": [ "styles/ericpugs-dungeon-tracker.css" ],
+    "description": "This module allows you to track turns in dungeon crawls. Designed for OSE.",
+    "scripts": [
+        "scripts/ericpugs-dungeon-tracker.js"
+    ],
+    "styles": [
+        "styles/ericpugs-dungeon-tracker.css"
+    ],
+    "templates": [
+        "templates/dungeon-time-tracker.html"
+    ],
     "authors": [
         {
             "name": "Eric Pug"
         }
-    ]
+    ],
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12"
+    },
+    "url": "https://github.com/EricPug/ericpugsdungeontimetracker",
+    "license": "MIT",
+    "foundry": {
+        "minimum": "12",
+        "verified": "12"
+    }
 }
