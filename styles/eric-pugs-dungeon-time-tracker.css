@@ -1,6 +1,6 @@
 .eric-pugs-dungeon-time-tracker .header {
   display: flex;
-  margin: 10px 20px;
+  margin: 10px 10px; /* Reduced left/right margin from 20px to 10px */
 }
 .eric-pugs-dungeon-time-tracker .header-left {
   width: 50%;
@@ -26,7 +26,7 @@
 .eric-pugs-dungeon-time-tracker .grid-container {
   display: flex;
   flex-direction: column;
-  margin: 20px 20px 10px 20px; /* Reduced bottom margin from 20px to 10px */
+  margin: 20px 10px 10px 10px; /* Reduced left/right margin from 20px to 10px */
 }
 .eric-pugs-dungeon-time-tracker .grid-row {
   display: flex;
@@ -41,7 +41,7 @@
 }
 .eric-pugs-dungeon-time-tracker .grid-group {
   display: flex;
-  margin-right: 20px;
+  margin-right: 15px; /* Reduced from 20px to 15px - still visible separation between hour groups */
   align-items: center;
 }
 .eric-pugs-dungeon-time-tracker .annotation-text {
@@ -49,14 +49,14 @@
   white-space: pre;
 }
 .eric-pugs-dungeon-time-tracker .tracker-checkbox {
-  margin: 5px;
+  margin: 2px; /* Reduced from 5px to 2px - much tighter within groups */
   width: 20px;
   height: 20px;
 }
 .eric-pugs-dungeon-time-tracker .footer {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 20px 20px 20px;
+  margin: 10px 10px 20px 10px; /* Reduced left/right margin from 20px to 10px */
 }
 .eric-pugs-dungeon-time-tracker .text-columns {
   display: flex;
