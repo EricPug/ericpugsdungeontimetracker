@@ -1,41 +1,53 @@
 <form class="sheet eric-pugs-dungeon-time-tracker">
-  <div class="header">
-    <div class="header-left">
-      <img src="modules/eric-pugs-dungeon-time-tracker/images/logo.png" alt="Dungeon Time Tracker Logo" class="logo">
+  <div class="tabs">
+    <button type="button" class="tab-button active" data-tab="tracker">Tracker</button>
+    <button type="button" class="tab-button" data-tab="rules">Rules Reference</button>
+  </div>
+
+  <div class="tab-content active" data-tab-content="tracker">
+    <div class="header">
+      <div class="header-left">
+        <img src="modules/eric-pugs-dungeon-time-tracker/images/logo.png" alt="Dungeon Time Tracker Logo" class="logo">
+      </div>
+      <div class="header-right">
+        <div class="time-tracking">
+          <label for="start-time">Dungeon Time Started:</label>
+          <select id="start-time">
+            {{#select startHour}}
+              {{#each hours}}
+                <option value="{{this}}">{{this}}</option>
+              {{/each}}
+            {{/select}}
+          </select>
+          <p>Total Elapsed Time: {{elapsedTime}}</p>
+          <p>Current Time: {{currentTime}}</p>
+        </div>
+      </div>
     </div>
-    <div class="header-right">
-      <div class="time-tracking">
-        <label for="start-time">Dungeon Time Started:</label>
-        <select id="start-time">
-          {{#select startHour}}
-            {{#each hours}}
-              <option value="{{this}}">{{this}}</option>
-            {{/each}}
-          {{/select}}
-        </select>
-        <p>Total Elapsed Time: {{elapsedTime}}</p>
-        <p>Current Time: {{currentTime}}</p>
+    <div class="grid-container">
+      {{#each tracker as |row rowIdx|}}
+        <div class="grid-row">
+          {{#each row as |group colIdx|}}
+            <div class="grid-group">
+              {{#each group as |checked cbIdx|}}
+                <input type="checkbox" class="tracker-checkbox" data-row="{{rowIdx}}" data-col="{{colIdx}}" data-checkbox-index="{{cbIdx}}" {{#if checked}}checked{{/if}} />
+              {{/each}}
+            </div>
+          {{/each}}
+        </div>
+      {{/each}}
+    </div>
+    <div class="footer">
+      <div class="referee-notes">
+        <label for="referee-notes">Referee's Notes</label>
+        <textarea id="referee-notes">{{notes}}</textarea>
+        <button type="button" class="insert-time">Add Time to Notes</button>
       </div>
     </div>
   </div>
-  <div class="grid-container">
-    <div class="grid-row annotation-row">
-      <div class="annotation-text">          w            w          wrt                w            w          wrt                w            w           wrt               w            w          wrtL</div>
-    </div>
-    {{#each tracker as |row rowIdx|}}
-      <div class="grid-row">
-        {{#each row as |group colIdx|}}
-          <div class="grid-group">
-            {{#each group as |checked cbIdx|}}
-              <input type="checkbox" class="tracker-checkbox" data-row="{{rowIdx}}" data-col="{{colIdx}}" data-checkbox-index="{{cbIdx}}" {{#if checked}}checked{{/if}} />
-            {{/each}}
-          </div>
-        {{/each}}
-      </div>
-    {{/each}}
-  </div>
-  <div class="footer">
-    <div class="text-columns">
+
+  <div class="tab-content" data-tab-content="rules">
+    <div class="rules-content">
       <div class="text-column">
         <p><strong>Sequence of Play Per Turn</strong></p>
         <p>1. Wandering monsters: Roll when noted in turn tracker. Typically 1 on D6</p>
@@ -60,17 +72,12 @@
         <p>Characters who do not rest suffer a –1 penalty to attack and damage rolls until they have rested for one turn.</p>
         <p><strong>Actions in 1 Turn</strong></p>
         <p>Move at base movement rate.</p>
-        <p>Search a 10’ × 10’ area: For secret doors / room traps.</p>
+        <p>Search a 10' × 10' area: For secret doors / room traps.</p>
         <p>Search an item for treasure traps. (Find traps skill)</p>
         <p>Encounter: All encounters take 1 turn.</p>
         <p>Debate: The referee may rule that a turn has passed while PCs discuss.</p>
         <p>Other actions: The referee should rule on which other actions take 1 turn. e.g. attempts to pick a lock, listen at a door, etc.</p>
       </div>
-    </div>
-    <div class="referee-notes">
-      <label for="referee-notes">Referee's Notes</label>
-      <textarea id="referee-notes">{{notes}}</textarea>
-      <button type="button" class="insert-time">Add Time to Notes</button>
     </div>
   </div>
 </form>

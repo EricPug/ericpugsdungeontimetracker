@@ -1,6 +1,61 @@
+(function() {
+  const form = document.querySelector('.eric-pugs-dungeon-time-tracker');
+  if (!form) return;
+
+  const tabButtons = form.querySelectorAll('.tab-button');
+  const tabContents = form.querySelectorAll('.tab-content');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const tabName = button.dataset.tab;
+
+      // Remove active from all buttons and contents
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      // Add active to clicked button and corresponding content
+      button.classList.add('active');
+      const targetContent = form.querySelector(`[data-tab-content="${tabName}"]`);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+    });
+  });
+})();
+</script>
+
+<style>
+.eric-pugs-dungeon-time-tracker .tabs {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+  margin: 0 10px;
+}
+.eric-pugs-dungeon-time-tracker .tab-button {
+  padding: 10px 20px;
+  background: #f0f0f0;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: -2px;
+}
+.eric-pugs-dungeon-time-tracker .tab-button:hover {
+  background: #e0e0e0;
+}
+.eric-pugs-dungeon-time-tracker .tab-button.active {
+  background: white;
+  border-bottom: 2px solid white;
+}
+.eric-pugs-dungeon-time-tracker .tab-content {
+  display: none;
+}
+.eric-pugs-dungeon-time-tracker .tab-content.active {
+  display: block;
+}
 .eric-pugs-dungeon-time-tracker .header {
   display: flex;
-  margin: 10px 10px; /* Reduced left/right margin from 20px to 10px */
+  margin: 10px 10px;
 }
 .eric-pugs-dungeon-time-tracker .header-left {
   width: 50%;
@@ -26,49 +81,38 @@
 .eric-pugs-dungeon-time-tracker .grid-container {
   display: flex;
   flex-direction: column;
-  margin: 20px 10px 10px 10px; /* Reduced left/right margin from 20px to 10px */
+  margin: 20px 10px 10px 10px;
 }
 .eric-pugs-dungeon-time-tracker .grid-row {
   display: flex;
   margin-bottom: 10px;
 }
 .eric-pugs-dungeon-time-tracker .grid-row:last-child {
-  margin-bottom: 0; /* No margin on the last row */
-}
-.eric-pugs-dungeon-time-tracker .annotation-row {
-  display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 .eric-pugs-dungeon-time-tracker .grid-group {
   display: flex;
-  margin-right: 15px; /* Reduced from 20px to 15px - still visible separation between hour groups */
+  margin-right: 15px;
   align-items: center;
-}
-.eric-pugs-dungeon-time-tracker .annotation-text {
-  font-weight: bold;
-  white-space: pre;
+  justify-content: center;
 }
 .eric-pugs-dungeon-time-tracker .tracker-checkbox {
-  margin: 2px; /* Reduced from 5px to 2px - much tighter within groups */
+  margin: 2px;
   width: 20px;
   height: 20px;
 }
+.eric-pugs-dungeon-time-tracker .grid-group .tracker-checkbox:nth-child(even) {
+  outline: 2px solid #d32f2f;
+  outline-offset: -2px;
+}
+.eric-pugs-dungeon-time-tracker .grid-group .tracker-checkbox:nth-child(even):checked {
+  outline-color: #388e3c;
+}
 .eric-pugs-dungeon-time-tracker .footer {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px 10px 20px 10px; /* Reduced left/right margin from 20px to 10px */
-}
-.eric-pugs-dungeon-time-tracker .text-columns {
-  display: flex;
-  width: 50%;
-}
-.eric-pugs-dungeon-time-tracker .text-column {
-  width: 50%;
-  padding-right: 10px;
-  font-size: 12px;
+  margin: 10px 10px 20px 10px;
 }
 .eric-pugs-dungeon-time-tracker .referee-notes {
-  width: 50%;
+  width: 100%;
 }
 .eric-pugs-dungeon-time-tracker .referee-notes label {
   display: block;
@@ -79,6 +123,15 @@
   height: 150px;
   resize: both;
   display: block;
+}
+.eric-pugs-dungeon-time-tracker .rules-content {
+  display: flex;
+  margin: 20px 10px;
+}
+.eric-pugs-dungeon-time-tracker .text-column {
+  width: 50%;
+  padding-right: 10px;
+  font-size: 12px;
 }
 .eric-pugs-dungeon-time-tracker .time-tracking {
   margin-top: 10px;
