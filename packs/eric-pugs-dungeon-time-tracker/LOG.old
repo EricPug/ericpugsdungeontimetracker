@@ -1,3 +1,7 @@
-2025/12/30-15:19:23.169 74c Recovering log #192
-2025/12/30-15:19:23.173 74c Delete type=0 #192
-2025/12/30-15:19:23.174 74c Delete type=3 #190
+2025/12/30-15:36:21.398 3204 Recovering log #213
+2025/12/30-15:36:21.403 3204 Delete type=0 #213
+2025/12/30-15:36:21.403 3204 Delete type=3 #211
+2025/12/30-15:36:59.814 39a0 Level-0 table #218: started
+2025/12/30-15:36:59.814 39a0 Level-0 table #218: 0 bytes OK
+2025/12/30-15:36:59.815 39a0 Delete type=0 #216
+2025/12/30-15:36:59.818 39a0 Manual compaction at level-0 from '!actors!BZB7404MB8O4AxJW' @ 72057594037927935 : 1 .. '!actors!BZB7404MB8O4AxJW' @ 0 : 0; will stop at (end)

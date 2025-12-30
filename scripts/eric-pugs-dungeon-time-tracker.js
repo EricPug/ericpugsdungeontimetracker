@@ -3,8 +3,8 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["sheet", "actor", "ericpugs-dungeon-time-tracker"],
       template: "modules/eric-pugs-dungeon-time-tracker/templates/eric-pugs-dungeon-time-tracker.html",
-      width: 850,
-      height: 900,
+      width: 640,
+      height: 640,
       resizable: true,
       title: "Eric Pug's Dungeon Time Tracker"
     });
@@ -13,7 +13,6 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
   async getData() {
     const data = await super.getData();
 
-    // Set custom icon once if still using Foundry's default
     if (this.actor.img === "icons/svg/mystery-man.svg" && !this.actor.getFlag("eric-pugs-dungeon-time-tracker", "iconSet")) {
       await this.actor.update({ 
         img: "modules/eric-pugs-dungeon-time-tracker/images/icon.png"
@@ -62,6 +61,20 @@ class EricPugsDungeonTimeTracker extends ActorSheet {
 
   activateListeners(html) {
     super.activateListeners(html);
+
+    // Handle tab switching
+    html.find(".tab-button").off("click").on("click", (event) => {
+      event.preventDefault();
+      const tabName = event.currentTarget.dataset.tab;
+      
+      // Remove active class from all buttons and content
+      html.find(".tab-button").removeClass("active");
+      html.find(".tab-content").removeClass("active");
+      
+      // Add active class to clicked button and corresponding content
+      html.find(`.tab-button[data-tab="${tabName}"]`).addClass("active");
+      html.find(`.tab-content[data-tab-content="${tabName}"]`).addClass("active");
+    });
 
     html.find(".tracker-checkbox").off("change").on("change", async (event) => {
       const row = event.currentTarget.dataset.row;

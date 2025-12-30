@@ -1,43 +1,16 @@
-(function() {
-  const form = document.querySelector('.eric-pugs-dungeon-time-tracker');
-  if (!form) return;
-
-  const tabButtons = form.querySelectorAll('.tab-button');
-  const tabContents = form.querySelectorAll('.tab-content');
-
-  tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const tabName = button.dataset.tab;
-
-      // Remove active from all buttons and contents
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
-
-      // Add active to clicked button and corresponding content
-      button.classList.add('active');
-      const targetContent = form.querySelector(`[data-tab-content="${tabName}"]`);
-      if (targetContent) {
-        targetContent.classList.add('active');
-      }
-    });
-  });
-})();
-</script>
-
-<style>
 .eric-pugs-dungeon-time-tracker .tabs {
   display: flex;
   border-bottom: 2px solid #ccc;
   margin: 0 10px;
 }
 .eric-pugs-dungeon-time-tracker .tab-button {
-  padding: 10px 20px;
-  background: #f0f0f0;
+  padding: 1px 10px;
+  background: #d0b996;
   border: none;
   border-bottom: 2px solid transparent;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: r;
   margin-bottom: -2px;
 }
 .eric-pugs-dungeon-time-tracker .tab-button:hover {
