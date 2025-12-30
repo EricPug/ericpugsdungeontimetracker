@@ -2,7 +2,7 @@
     "id": "eric-pugs-dungeon-time-tracker",
     "name": "eric-pugs-dungeon-time-tracker",
     "title": "Eric Pug's Dungeon Time Tracker",
-    "version": "1.0.0",
+    "version": "1.3.1",
     "description": "This module allows you to track turns in dungeon crawls. Designed for OSE.",
     "scripts": [
         "scripts/eric-pugs-dungeon-time-tracker.js"
@@ -17,7 +17,7 @@
     ],
     "compatibility": {
         "minimum": "12",
-        "verified": "12"
+        "verified": "13"
     },
     "url": "https://github.com/EricPug/ericpugsdungeontimetracker",
     "license": "CC BY 4.0",
