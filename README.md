@@ -4,7 +4,7 @@ A Foundry VTT module for tracking time during dungeon crawls.
 
 Keep track of turns, calculate elapsed time, current time, and create a log of the action.
 
-Designed for Old-School Essentials
+Designed for Old-School Essentials, Dolmenwood and other Old School BX style games where 1 turn = 10 minutes.
 
 <img width="979" height="981" alt="image" src="https://github.com/user-attachments/assets/e1c3dcac-70ec-470c-b7f9-c39911d3faf2" />
 
